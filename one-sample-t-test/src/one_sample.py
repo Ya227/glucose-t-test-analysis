@@ -64,8 +64,8 @@ plt.plot(x, y, 'b-', label=f'T (df={df})')
 
 plt.fill_between(x, y, where=(x <= -critical_value), color='red', alpha=0.3, label='Критическая область')
 plt.fill_between(x, y, where=(x >= critical_value), color='red', alpha=0.3)
-plt.axvline(T, color='g', linestyle='--', label=f'Выборочная статистика (T={T:.2f})')
 
+plt.axvline(T, color='g', linestyle='--', label=f'Выборочная статистика (T={T:.2f})')
 plt.title('Двусторонний T критерий Стьюдента')
 plt.xlabel('Значение t-статистики')
 plt.ylabel('Плотность вероятности')
